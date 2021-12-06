@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelly</title>
+    <meta
+      name="description"
+      content="Travelly is a travel Agency Website help you to travel and booking"
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="./icons/airplane.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="nav">
+      <nav>
+        <h1 id="logo"><a href="#heroSection">Travelly</a></h1>
+        <ul>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#contactUs">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="heroSection">
+        <h2>Travel Beyond Limits.</h2>
+        <h3>
+          Start your travel at an affordable price with Travelly <br />
+          Contact us Now!
+        </h3>
+        <button>Book Now</button>
+      </section>
+      <section id="locations">
+        <header class="locationHead">
+          <h2>Perfect Travelling Experience</h2>
+          <h3>
+            We will pick the perfect hotel, flight <br />
+            and Travelling destination
+          </h3>
+          <img src="./img/cloud.png" class="movingCloud-1 clouds" alt="" />
+          <img src="./img/cloud.png" class="movingCloud-2 clouds" alt="" />
+        </header>
+      </section>
+
+      <section id="benefits">
+        <header class="benefitHead">
+          <h2>The Perfect Travel</h2>
+          <h3>
+            We cover everything from picking the perfect hotel <br />to flight
+            and destination
+          </h3>
+        </header>
+        <div class="cards">
+          <div class="card">
+            <div class="cardImage">
+              <img src="./icons/route-solid.svg" alt="" />
+            </div>
+            <h4>Travel</h4>
+            <p>Travel in ver 250 Countries with no effort</p>
+          </div>
+          <div class="card">
+            <div class="cardImage">
+              <img src="./icons/bed-solid.svg" alt="" />
+            </div>
+            <h4>Hotel</h4>
+            <p>Hotel located near popular places</p>
+          </div>
+          <div class="card">
+            <div class="cardImage">
+              <img src="./icons/plane-departure-solid.svg" alt="" />
+            </div>
+            <h4>Fly</h4>
+            <p>We will provide you flight with every order placed</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contactUs">
+        <div class="contactWrapper">
+          <header class="contactHead">
+            <h2>Contact Us</h2>
+          </header>
+          <form
+            class="contactForm"
+            action="https://formspree.io/f/mlezrqeo"
+            method="POST"
+          >
+            <div class="formName">
+              <label for="name">Name</label>
+              <input required type="text" id="name" name="name" />
+            </div>
+            <div class="formEmail">
+              <label for="email">Email </label>
+              <input required type="email" id="email" name="_replyto" />
+            </div>
+            <button type="submit" value="Send">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footerWrapper">
+        <h5><a href="#heroSection"> Travelly &copy</a></h5>
+        <ul class="socialIcons">
+          <li>
+            <a
+              title="Twitter-social-media"
+              target="_blank"
+              href="https://www.twitter.com"
+              ><img src="./icons/twitter.svg" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a
+              title="Youtube-social-media"
+              target="_blank"
+              href="https://www.youtube.com/"
+              ><img src="./icons/youtube.svg" alt="youtube"
+            /></a>
+          </li>
+          <li>
+            <a
+              title="Instagram-social-media"
+              target="_blank"
+              href="https://www.instagram.com/jahan._zaib/"
+              ><img src="./icons/instagram.svg" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

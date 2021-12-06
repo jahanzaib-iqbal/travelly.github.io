@@ -1,0 +1,323 @@
+/* Global Declaration */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  font-size: 2.8rem;
+}
+label,
+input,
+p,
+li,
+button {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 4.8rem;
+  font-weight: 500;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+button {
+  padding: 1.8rem 4rem;
+  background: #4c6e97;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  /* animation: cloudAnimation 1s ease-in-out 0s infinite alternate running; */
+}
+button:hover {
+  background: #131c27;
+  font-size: 2.8rem;
+}
+
+/* --------Hero Section---------- */
+
+#nav {
+  position: sticky;
+  top: 0%;
+  z-index: 3;
+}
+
+#nav,
+#nav a {
+  background-color: #131c27;
+}
+#nav a {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+#nav a:hover {
+  color: rgb(167, 164, 164);
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+}
+
+#heroSection {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/landing-page.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#heroSection h3 {
+  margin: 1rem 0rem 4rem 0rem;
+}
+
+/* ---------------Location Scrtion-------------- */
+
+#locations {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/new-york-page.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.locationHead {
+  width: 90%;
+  margin: auto;
+}
+.locationHead h2 {
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+  /* margin-bottom: 4rem; */
+}
+.locationHead h3 {
+  padding: 4rem 0rem 6rem 0rem;
+  background: linear-gradient(#131c27, #663b34);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.clouds {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 44rem;
+  pointer-events: none;
+}
+.movingCloud-1 {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+.movingCloud-2 {
+  top: 15%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: cloudAnimation 4s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(20%, -15%);
+  }
+  to {
+    transform: translate(10%, -10%);
+  }
+}
+
+/*--------------------Benefits------------------ */
+.benefitHead {
+  min-height: 30vh;
+  background: #343c44;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.benefitHead h3 {
+  padding: 1.5rem;
+}
+.cards {
+  min-height: 70vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  flex: 1 1 20rem;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.1),
+    0rem 2rem 2rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 2rem 5rem;
+  min-height: 45vh;
+}
+.card img {
+  max-width: 15%;
+  margin: 1rem;
+}
+.cardImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background: #4c6e97;
+}
+
+.card h4,
+.card p {
+  padding: 2rem 0rem;
+}
+
+/* ----------------Contact Section---------------------- */
+
+#contactUs {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/contact-mountain.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactWrapper {
+  width: 60%;
+  background: rgba(19, 28, 29, 0.8);
+  color: white;
+  border-radius: 2rem;
+}
+.contactHead {
+  text-align: center;
+  padding: 4rem;
+}
+.contactForm {
+  text-align: center;
+}
+.formName,
+.formEmail {
+  padding: 3rem;
+  text-align: center;
+}
+.contactForm label,
+.contactForm input {
+  padding: 1rem;
+}
+.contactForm button {
+  width: 100%;
+  margin-top: 4rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+/* ---------------------Footer---------------------- */
+
+footer {
+  background: #131c27;
+  color: white;
+}
+
+.footerWrapper {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footerWrapper ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerWrapper h5 {
+  flex: 1 1 30rem;
+}
+.footerWrapper h5 a,
+.footerWrapper ul li a {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+.footerWrapper h5 a:hover {
+  color: rgb(167, 164, 164);
+}
+
+button:focus {
+  background: #3d4e64;
+  outline: solid;
+}
+
+/* -----------------Mobile Media Query------------ */
+
+@media screen and (max-width: 790px) {
+  nav {
+    display: block; /* block takes full space*/
+    text-align: center;
+  }
+  #logo {
+    padding: 0.5rem;
+  }
+  html {
+    font-size: 45%;
+  }
+  .locationHead h3 {
+    background: rgba(19, 28, 39, 0.8);
+    border-radius: 1rem;
+    -webkit-text-fill-color: white;
+  }
+  .contactWrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footerWrapper h5 {
+    text-align: center;
+  }
+}
